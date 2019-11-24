@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -636,6 +637,9 @@ public class ActivityJuego extends Activity {
         Button botonStart = findViewById(R.id.button1);
         botonStart.setEnabled(false);
 
+        MediaPlayer reprodcutor = MediaPlayer.create(this,R.raw.tedecampana);
+        reprodcutor.start();
+
         iniciarChingada();
     }
 
@@ -673,6 +677,7 @@ public class ActivityJuego extends Activity {
             }
 
 
+
             this.ini = 0;
             this.fin = System.currentTimeMillis() + this.timer;
 
@@ -699,6 +704,9 @@ public class ActivityJuego extends Activity {
 
                     this.actualizarTablero(tablero.getMatrizTablero());
                     this.cambiarSiguiente(piezas.get(0).getColor());
+
+
+
                 }
 
 

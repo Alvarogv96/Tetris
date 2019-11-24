@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         this.inicializarListaDeModos();
 
         this.modos.setText(this.modosDeJuego.get(this.numeroModo));
+
+        MediaPlayer reproductor = MediaPlayer.create(this,R.raw.tedecampana);
+        reproductor.start();
     }
 
     public void inicializarListaDeModos(){

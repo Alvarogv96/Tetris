@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -32,6 +33,9 @@ public class ActivityColores extends AppCompatActivity {
         this.iniciarListaPaletas();
 
         this.mostrarPaleta.setText(this.listaPaletas.get(this.numeroPaleta));
+
+        MediaPlayer reprodcutor = MediaPlayer.create(this,R.raw.tedecampana);
+        reprodcutor.start();
 
     }
 

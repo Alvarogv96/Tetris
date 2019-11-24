@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -47,6 +48,10 @@ public class ActivityRanking extends Activity{
         } catch (IOException e) {
 
         }
+
+        MediaPlayer reprodcutor = MediaPlayer.create(this,R.raw.tedecampana);
+        reprodcutor.start();
+
     }
 
 
