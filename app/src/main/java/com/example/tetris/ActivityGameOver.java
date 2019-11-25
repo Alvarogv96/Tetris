@@ -45,8 +45,7 @@ public class ActivityGameOver extends Activity {
 
         this.puntuacion.setText(getIntent().getIntExtra("puntuacion",0)+ " puntos");
 
-        MediaPlayer reprodcutor = MediaPlayer.create(this,R.raw.tedecampana);
-        reprodcutor.start();
+
 
 
     }

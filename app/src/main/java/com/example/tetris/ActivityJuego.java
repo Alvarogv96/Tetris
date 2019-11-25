@@ -637,8 +637,9 @@ public class ActivityJuego extends Activity {
         Button botonStart = findViewById(R.id.button1);
         botonStart.setEnabled(false);
 
-        MediaPlayer reprodcutor = MediaPlayer.create(this,R.raw.tedecampana);
+        MediaPlayer reprodcutor = MediaPlayer.create(this,R.raw.mix);
         reprodcutor.start();
+        reprodcutor.setLooping(true);
 
         iniciarChingada();
     }

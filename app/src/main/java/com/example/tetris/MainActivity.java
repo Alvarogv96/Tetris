@@ -33,8 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
         this.modos.setText(this.modosDeJuego.get(this.numeroModo));
 
-        MediaPlayer reproductor = MediaPlayer.create(this,R.raw.tedecampana);
-        reproductor.start();
+        MediaPlayer reprodcutor = MediaPlayer.create(this,R.raw.mix);
+        reprodcutor.start();
+        reprodcutor.setLooping(true);
     }
 
     public void inicializarListaDeModos(){

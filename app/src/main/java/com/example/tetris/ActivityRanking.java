@@ -49,8 +49,9 @@ public class ActivityRanking extends Activity{
 
         }
 
-        MediaPlayer reprodcutor = MediaPlayer.create(this,R.raw.tedecampana);
+        MediaPlayer reprodcutor = MediaPlayer.create(this,R.raw.mix);
         reprodcutor.start();
+        reprodcutor.setLooping(true);
 
     }
 
